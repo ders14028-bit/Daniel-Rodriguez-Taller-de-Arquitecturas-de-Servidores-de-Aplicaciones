@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflexion Lab - MicroSpringBoot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 24px;
+            line-height: 1.5;
+        }
+
+        h1, h2 {
+            margin-bottom: 8px;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 14px;
+        }
+
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Reflexion Lab - MicroSpringBoot</h1>
+    <p>Servidor HTTP con anotaciones <code>@RestController</code>, <code>@GetMapping</code> y <code>@RequestParam</code>.</p>
+
+    <div class="card">
+        <h2>Endpoints Dinamicos</h2>
+        <ul>
+            <li><a href="/">/</a> -> Mensaje base del controlador Hello</li>
+            <li><a href="/greeting">/greeting</a> -> Saludo por defecto</li>
+            <li><a href="/greeting?name=Daniel">/greeting?name=Daniel</a> -> Saludo personalizado</li>
+            <li><a href="/greeting?name=Arquitectura">/greeting?name=Arquitectura</a> -> Otro ejemplo</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Recursos Estaticos</h2>
+        <ul>
+            <li><a href="/index.html">/index.html</a></li>
+            <li><a href="/logo.png">/logo.png</a></li>
+        </ul>
+        <img src="/logo.png" alt="Logo del proyecto" style="max-width: 180px;" />
+    </div>
+
+    <div class="card">
+        <h2>Notas de Prueba</h2>
+        <p>Si alguna URL devuelve <code>Not Found</code>, verifica que el servidor este corriendo en <code>http://localhost:8080</code>.</p>
+        <p>Comando de ejecucion recomendado:</p>
+        <p><code>java -cp target/classes co.edu.escuelaing.reflexionlab.Main</code></p>
+    </div>
+</body>
+</html>

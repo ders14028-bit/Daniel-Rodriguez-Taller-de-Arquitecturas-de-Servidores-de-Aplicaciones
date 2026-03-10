@@ -85,6 +85,18 @@ Core classes in `co.edu.escuelaing.reflexionlab`:
 mvn clean package
 ```
 
+### Run Automated Tests
+
+```bash
+mvn test
+```
+
+Current automated test coverage includes:
+
+- Controller auto-discovery with `@RestController`.
+- Dynamic route invocation for `/greeting` with default and explicit query params.
+- Validation error when loading a class without `@RestController`.
+
 ### Run (Final version: auto-scan)
 
 ```bash
@@ -245,6 +257,27 @@ Deployed commit hash:
 
 ![alt text](src/main/resources/image.png)
 
+### 5) Automated Tests (`mvn test`)
+
+Command:
+
+```bash
+mvn test
+```
+
+Sample output:
+
+```text
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running co.edu.escuelaing.reflexionlab.MicroSpringBootTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+[INFO] BUILD SUCCESS
+```
+
+![alt text](src/main/resources/tests.png)
+
 ## Repository Structure
 
 ```text
@@ -268,6 +301,8 @@ Deployed commit hash:
 		|           `-- logo.png
 		`-- test
 				|-- java
+				|   `-- co/edu/escuelaing/reflexionlab
+				|       `-- MicroSpringBootTest.java
 				`-- resources
 ```
 

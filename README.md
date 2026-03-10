@@ -276,7 +276,7 @@ Sample output:
 [INFO] BUILD SUCCESS
 ```
 
-![alt text](src/main/resources/tests.png)
+![alt text](src/main/resources/EC29.png)
 
 ## Repository Structure
 

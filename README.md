@@ -1,4 +1,4 @@
-# Java Micro Web Server and IoC Framework
+# Java Micro Web Server and IoC Framework (Reflection Lab)
 
 **Student:** Daniel Rodriguez
 
@@ -162,7 +162,7 @@ Expected response:
 - OS: Amazon Linux 2023
 - Open application port: `8080`
 
-`[Add screenshot: EC2 instance details page]`
+![alt text](src/main/resources/EC21.png)
 
 ### 2) Build the Project Locally
 
@@ -170,19 +170,13 @@ Expected response:
 mvn clean package
 ```
 
-Expected artifact:
-
-- `target/reflexionlab-1.0.0-SNAPSHOT.jar`
-
-`[Add screenshot: successful local build]`
-
 ### 3) Upload JAR to EC2
 
 ```bash
 scp -i "C:\Users\ders1\Downloads\cloudec2primer\AppServerKey.pem" "C:\Users\ders1\OneDrive\Documentos\gthub\Daniel-Rodriguez-Taller-de-Arquitecturas-de-Servidores-de-Aplicaciones\target\reflexionlab-1.0.0-SNAPSHOT.jar" ec2-user@100.48.207.105:~/
 ```
 
-`[Add screenshot: scp transfer completed]`
+![alt text](src/main/resources/EC22.png)
 
 ### 4) Connect by SSH and Run the Application
 
@@ -195,7 +189,7 @@ Expected server log:
 
 - `Micro server running on http://localhost:8080`
 
-`[Add screenshot: terminal showing running server]`
+![alt text](src/main/resources/EC23.png)
 
 ### 5) Security Group Configuration
 
@@ -204,7 +198,7 @@ Inbound rules required:
 - SSH (`22`) from your IP
 - Custom TCP (`8080`) from `0.0.0.0/0`
 
-`[Add screenshot: security group inbound rules]`
+![alt text](src/main/resources/EC24.png)
 
 ### 6) Remote Validation (Public Access)
 
@@ -215,13 +209,13 @@ Test URLs:
 - `http://100.48.207.105:8080/index.html`
 - `http://100.48.207.105:8080/logo.png`
 
-`[Add screenshot: GET / response]`
+![alt text](src/main/resources/EC25.png)
 
-`[Add screenshot: GET /greeting?name=Daniel response]`
+![alt text](src/main/resources/EC26.png)
 
-`[Add screenshot: GET /index.html response]`
+![alt text](src/main/resources/EC27.png)
 
-`[Add screenshot: GET /logo.png response]`
+![alt text](src/main/resources/EC28.png)
 
 ### 7) Commit Deployed to EC2
 
@@ -231,7 +225,7 @@ git rev-parse --short HEAD
 
 Deployed commit hash:
 
-- `[Add commit hash here]`
+- Deployed commit hash (full): a1bb2ecf207f3a08be8490514670ec246d6b0508
 
 ## Evidence
 

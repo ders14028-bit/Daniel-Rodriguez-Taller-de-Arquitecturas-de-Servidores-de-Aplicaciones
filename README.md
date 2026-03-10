@@ -1,4 +1,4 @@
-# Java Micro Web Server and IoC Framework (Reflection Lab)
+# Java Micro Web Server and IoC Framework
 
 **Student:** Daniel Rodriguez
 
